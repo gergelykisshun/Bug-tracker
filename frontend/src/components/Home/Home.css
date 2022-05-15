@@ -1,0 +1,14 @@
+.home-section{
+  align-items: center;
+  color: var(--text-active);
+}
+
+.home-action-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro{
+  color: var(--primary-color);
+}

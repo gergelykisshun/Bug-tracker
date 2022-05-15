@@ -1,0 +1,18 @@
+.project-card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 10px 0;
+  border-bottom: 1px solid var(--text-inactive);
+}
+
+.workers {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-inline: 10px;
+}
+
+.buttons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

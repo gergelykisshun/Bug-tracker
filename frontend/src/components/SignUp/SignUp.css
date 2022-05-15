@@ -1,0 +1,18 @@
+.roles-container{
+  display: flex;
+  gap: 30px;
+  padding: 100px 0;
+}
+
+.roles-container .role-radio {
+  width: 100px;
+  height: 100px;
+  background-color: var(--text-inactive);
+  pointer-events: none;
+}
+
+.roles-container input:checked ~ .role-radio  {
+  /* box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7); */
+  background-color: var(--primary-color);
+}
+

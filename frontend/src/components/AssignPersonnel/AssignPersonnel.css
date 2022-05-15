@@ -1,0 +1,16 @@
+.person-container {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: var(--bg3-form);
+  border-radius: var(--border-radius);
+}
+.person-container h2 {
+  color: var(--text-active);
+}
+
+.person-container .add-person {
+  color: var(--primary-color);
+}

@@ -1,0 +1,6 @@
+.assigned-worker-container{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text-active);
+}

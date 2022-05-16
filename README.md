@@ -1,6 +1,7 @@
 #Bug-tracker
 
 Used React.js on the frontend, Express.js for API development, MongoDB for database
+Login as /user:Jon , passw:jon/ for manager features.
 
 ##Functionality
 - Login system with Passport.js

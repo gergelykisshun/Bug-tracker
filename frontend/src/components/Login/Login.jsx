@@ -4,6 +4,10 @@ import SignUp from '../SignUp/SignUp';
 import ErrorMsg from '../ErrorMsg/ErrorMsg';
 import {useUpdateUser} from '../../contexts/UserContextProvider';
 import AdbIcon from '@mui/icons-material/Adb';
+import InfoIcon from '@mui/icons-material/Info';
+import Tooltip from '@mui/material/Tooltip';
+
+
 
 
 const Login = () => {
@@ -73,6 +77,13 @@ const Login = () => {
     setPosting(true);
   };
 
+  const autoFillInput = () => {
+    setUserInput({
+      username: 'Jon',
+      password: 'jon'
+    })
+  };
+
   return (
     <section className='login-section'>
       {error.isVisible && <ErrorMsg msg={error.msg} setError={setError}/>}
@@ -86,7 +97,12 @@ const Login = () => {
         {isSigningUp ? 
         <SignUp userInput={userInput} inputHandler={inputHandler} switchHandler={switchHandler} showErrorMsg={showErrorMsg} setIsSigningUp={setIsSigningUp}/> :
         <>
-          <h2>Login</h2>
+          <h2>
+            Login
+            <Tooltip className='tool-tip-style' title="Easy-login autofill" arrow>
+              <InfoIcon onClick={autoFillInput}/>
+            </Tooltip>
+          </h2>
           <input type="text" placeholder='Username' name='username' value={userInput.username} onChange={inputHandler}/>
           <input type="password" placeholder='Password' name='password' value={userInput.password} onChange={inputHandler}/>
           <button onClick={loginHandler} className='primary-btn'>Login</button>
